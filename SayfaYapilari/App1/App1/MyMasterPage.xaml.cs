@@ -13,6 +13,7 @@ namespace App1
         public MyMasterPage()
         {
             InitializeComponent();
+            Title = "Master Pagem";
         }
     }
 }
