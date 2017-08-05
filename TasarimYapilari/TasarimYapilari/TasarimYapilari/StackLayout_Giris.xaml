@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TasarimYapilari.StackLayout_Giris">
+
+  <!--
+    Orientation="Vertical" => içinde ki kontrollerin dikey olarak hizalanacağını belirtir
+    Orientation="Horizontal" => içinde ki kontrollerin yatay olarak hizalanacağını belirtir
+    
+    HorizontalOptions="Center" => içinde ki kontroller yatayda ortalanır.
+    VerticalOptions="Center" => içinde ki kontroller dikeyde ortalanır.
+    Spacing="5" => kontroller arasında ki boşluk
+  -->
+  <StackLayout Padding="10" BackgroundColor="Yellow" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Orientation="Vertical">
+
+    <Label Text="Giriş Yap" TextColor="Black" HorizontalOptions="Center"></Label>
+
+    <Entry Placeholder="Giriş Kodu"></Entry>
+    <Entry Placeholder="Şifre"></Entry>
+
+    <StackLayout Padding="10" BackgroundColor="Green" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Orientation="Horizontal" Spacing="5">
+      <Button Text="Giriş Yap"></Button>
+      <Button Text="Şifremi Unuttum"></Button>
+    </StackLayout>
+    
+  </StackLayout>
+  
+</ContentPage>
