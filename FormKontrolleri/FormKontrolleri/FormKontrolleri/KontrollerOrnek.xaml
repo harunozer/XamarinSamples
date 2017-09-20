@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormKontrolleri.KontrollerOrnek">
+
+  <ContentPage.Content>
+    <ScrollView>
+      <StackLayout>
+      <Button Text="Button1" Clicked="Button1Click"></Button>
+      
+      <!--Loading icon görünmesi-->
+      <ActivityIndicator x:Name="LoadingIndicator" IsRunning="False"></ActivityIndicator>
+      
+      <DatePicker x:Name="DatePicker1"></DatePicker>
+      
+      <!--IsPassword default false dir-->
+      <!--
+      <Entry FontAttributes="Bold" FontFamily="Times New Roman" FontSize="16"
+             HorizontalTextAlignment="Start"
+             TextColor="Green"
+             Keyboard="Email"
+             IsPassword="False"
+             Placeholder="E-Postanız..." PlaceholderColor="Yellow">
+        
+      </Entry>
+      -->
+      <!--MultiLine Entry-->
+      <Editor FontFamily="Calibri" BackgroundColor="Gray"
+              HeightRequest="150"></Editor>
+      
+      <!--Picker (Dropdown List-->
+      <Picker Title="Lütfen Seçiniz" SelectedIndexChanged="pickerChange">
+        <Picker.Items>
+          <x:String>1</x:String>
+          <x:String>2</x:String>
+        </Picker.Items>
+      </Picker>
+      
+      <!--ProgressBar-->
+      <ProgressBar x:Name="progress1" Progress=".3"></ProgressBar>
+      
+      <!--Slider-->
+      <Slider x:Name="slider1" Minimum="0" Maximum="100"></Slider>
+      <Label BindingContext="{x:Reference slider1}" Text="{Binding Value}" FontSize="Large" TextColor="Yellow"></Label>
+    
+      <!--Stepper-->
+      <Stepper x:Name="stepper1" Minimum="10" Maximum="100" Increment="12"></Stepper>
+      <Label BindingContext="{x:Reference stepper1}" Text="{Binding Value}" FontSize="Large" TextColor="Yellow"></Label>
+      
+      <!--Switch-->
+      <Switch IsToggled="False" Toggled="onToggled"></Switch>
+      
+
+      
+    </StackLayout>
+    </ScrollView>
+  </ContentPage.Content>
+  
+</ContentPage>
