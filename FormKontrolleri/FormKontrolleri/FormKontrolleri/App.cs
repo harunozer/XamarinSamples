@@ -12,8 +12,9 @@ namespace FormKontrolleri
         public App()
         {
             // The root page of your application
-            MainPage = new KontrollerOrnek();
+            //MainPage = new KontrollerOrnek();
             //MainPage = new WebViewOrnek();
+            MainPage = new TableViewSample();
         }
 
         protected override void OnStart()

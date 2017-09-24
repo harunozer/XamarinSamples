@@ -40,6 +40,9 @@
       <DependentUpon>KontrollerOrnek.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableViewSample.xaml.cs">
+      <DependentUpon>TableViewSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WebViewOrnek.xaml.cs">
       <DependentUpon>WebViewOrnek.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="WebViewOrnek.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TableViewSample.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

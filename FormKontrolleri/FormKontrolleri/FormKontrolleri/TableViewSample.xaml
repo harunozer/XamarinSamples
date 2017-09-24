@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormKontrolleri.TableViewSample">
+  <ContentPage.Content>
+    <TableView Intent="Form">
+      <TableRoot>
+        <TableSection Title="TableSection.Title">
+          <SwitchCell Text="SwitchCellText" On="True"></SwitchCell>
+          <EntryCell Label="EntryCell" Placeholder="www.domain.com"></EntryCell>
+          <ImageCell ImageSource="icon.png" Text="ImageCell ImageText" Detail="Image Detail Prop"></ImageCell>
+          <TextCell Text="TextCell" Detail="TextCell Detail"></TextCell>
+        </TableSection>
+      </TableRoot>
+    </TableView>
+  </ContentPage.Content>
+</ContentPage>
