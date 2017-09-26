@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResourceOrnekler.App">
+  <Application.Resources>
+    <ResourceDictionary>
+      
+      <Style x:Key="GlobalStyleXAML" TargetType="Entry">
+        <Setter Property="TextColor" Value="Red"></Setter>
+        <Setter Property="FontSize" Value="24"></Setter>
+        <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+      </Style>
+
+
+      <!--Theme1 Theme-->
+      <Style TargetType="Label" x:Key="Theme1Title">
+        <Setter Property="FontSize" Value="35"></Setter>
+        <Setter Property="FontAttributes" Value="Bold"></Setter>
+        <Setter Property="TextColor" Value="Red"></Setter>
+      </Style>
+
+      <Style TargetType="Button" x:Key="Theme1Button">
+        <Setter Property="FontSize" Value="15"></Setter>
+        <Setter Property="BackgroundColor" Value="Red"></Setter>
+        <Setter Property="TextColor" Value="Black"></Setter>
+      </Style>
+
+      <Style TargetType="StackLayout" x:Key="Theme1Background">
+        <Setter Property="BackgroundColor" Value="White"></Setter>
+        <Setter Property="Opacity" Value=".8"></Setter>
+      </Style>
+      
+      <!--Theme2 Theme-->
+      <Style TargetType="Label" x:Key="Theme2Title">
+        <Setter Property="FontSize" Value="35"></Setter>
+        <Setter Property="TextColor" Value="White"></Setter>
+      </Style>
+
+      <Style TargetType="Button" x:Key="Theme2Button">
+        <Setter Property="FontSize" Value="25"></Setter>
+        <Setter Property="BackgroundColor" Value="White"></Setter>
+        <Setter Property="TextColor" Value="Black"></Setter>
+      </Style>
+
+      <Style TargetType="StackLayout" x:Key="Theme2Background">
+        <Setter Property="BackgroundColor" Value="Black"></Setter>
+        <Setter Property="Opacity" Value=".5"></Setter>
+      </Style>
+      
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

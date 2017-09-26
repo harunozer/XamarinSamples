@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResourceOrnekler.StylePage">
+  
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <!--StylePage de tanımlı olduğundan sadece bu sayfada geçerli olur-->
+      <!--Key belirtilmezse bütün Labeller e uygular-->
+      <Style x:Key="LocalStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="Red"></Setter>
+        <Setter Property="FontSize" Value="24"></Setter>
+        <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+      </Style>
+      
+      
+      <!--BasedOn ile miras alabilir-->
+      <Style x:Key="LabelStyleMiras" TargetType="Label" BasedOn="{StaticResource LocalStyle}">
+        <Setter Property="FontAttributes" Value="Bold"></Setter>
+      </Style>
+      
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <ContentPage.Content>
+    <StackLayout>
+      <Label Text="Test Label1 Style Yok"></Label>
+      <Label Text="Test LocalStyle" Style="{StaticResource LocalStyle}"></Label>
+      <Label Text="Test LabelStyleMiras" Style="{StaticResource LabelStyleMiras}"></Label>
+      <Button x:Name="button1" Text="buttonStyle .cs"></Button>
+
+      
+      <Entry Text="Global Style .xaml tanımlı" Style="{StaticResource GlobalStyleXAML}"></Entry>
+
+      <Button Text="Global buttonStyle App.cs" Style="{StaticResource GlobalButtonStyleCS}"></Button>
+      
+      <StackLayout Style="{DynamicResource Theme1Background}">
+        <Label Text="Label1" Style="{DynamicResource Theme1Title}"></Label>
+        <Button Text="Tema Değiştir!" Style="{DynamicResource Theme1Button}" Clicked="ThemeDegistir"></Button>
+      </StackLayout>
+      
+    </StackLayout>
+  </ContentPage.Content>
+  
+</ContentPage>
